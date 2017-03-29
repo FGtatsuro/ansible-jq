@@ -1,2 +1,9 @@
 ---
 # tasks file for jq(On Debian family)
+- name: Install jq with APT
+  apt:
+    name: 'jq'
+    update_cache: yes
+    cache_valid_time: '3600'
+    install_recommends: no
+  become: yes

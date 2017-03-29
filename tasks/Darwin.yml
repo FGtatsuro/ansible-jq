@@ -1,2 +1,6 @@
 ---
 # tasks file for jq(On OSX)
+- name: Install jq with Homebrew
+  homebrew:
+    name: 'jq'
+    update_homebrew: yes
