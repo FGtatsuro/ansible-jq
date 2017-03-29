@@ -1,0 +1,8 @@
+---
+# tasks file for jq(On RedHat family)
+# ATTENTION: RedHat families are NOT supported officially. There is no test about these tasks.
+- name: Install jq with Yum
+  yum:
+    name: 'jq'
+    update_cache: yes
+  become: yes
