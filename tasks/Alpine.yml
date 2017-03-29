@@ -1,2 +1,7 @@
 ---
 # tasks file for jq(On Alpine Linux)
+- name: Install jq with APK
+  apk:
+    name: 'jq'
+    update_cache: yes
+  become: yes
